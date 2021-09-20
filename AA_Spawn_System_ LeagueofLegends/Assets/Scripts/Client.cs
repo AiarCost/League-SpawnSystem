@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Client : MonoBehaviour
 {
@@ -23,20 +24,20 @@ public class Client : MonoBehaviour
     }
 
 
-    public void LocationChange(Text location)
+    public void LocationChange(TextMeshProUGUI location)
     {
         requirements.Location = location.text;
         Debug.Log(location.text);
     }
 
-    public void CharTypeChange(Text characterType)
+    public void CharTypeChange(TextMeshProUGUI characterType)
     {
         requirements.CharacterType = characterType.text;
 
         Debug.Log(characterType.text);
     }
 
-    public void GenderChange(Text gender)
+    public void GenderChange(TextMeshProUGUI gender)
     {
         requirements.Gender = gender.text;
         Debug.Log(gender.text);
